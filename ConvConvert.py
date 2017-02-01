@@ -10,15 +10,15 @@ def conv (hsv):
 	assert hsv[2] >= 0 and hsv[2] <= 255, 'Value value is not valid'
  
 	
-	if hsv[0] >= 55 and hsv[0] <= 65 and hsv[1] >= 240 and hsv[2] >= 140:
+	if hsv[0] >= 55 and hsv[0] <= 65 and hsv[1] >= 230 and hsv[2] >= 140:
 		return 1
-	elif hsv[0] >= 12 and hsv[0] <= 35 and hsv[1] >= 240 and hsv[2] >= 240:
+	elif hsv[0] >= 12 and hsv[0] <= 35 and hsv[1] >= 230 and hsv[2] >= 230:
 		return 2
-	elif hsv[0] >= 160 or hsv[0] <= 10 and hsv[1] >= 240 and hsv[2] >= 140:
+	elif hsv[0] >= 160 or hsv[0] <= 10 and hsv[1] >= 230 and hsv[2] >= 140:
 		return 3
-	elif hsv[0] >= 145 and hsv[0] <= 155 and hsv[1] >= 240 and hsv[2] >= 240:
+	elif hsv[0] >= 145 and hsv[0] <= 155 and hsv[1] >= 230 and hsv[2] >= 230:
 		return 4
-	elif hsv[0] >= 135 and hsv[0] <= 140 and hsv[1] >= 240 and hsv[2] >= 240:
+	elif hsv[0] >= 135 and hsv[0] <= 140 and hsv[1] >= 230 and hsv[2] >= 230:
 		return 5
 	else:
 		return -1
