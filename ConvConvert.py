@@ -1,9 +1,6 @@
 import numpy as np
 
 def conv (hsv):
-	h = hsv[0]
-	s = hsv[1]
-	v = hsv[2]
 	
 	assert hsv[0] >= 0 and hsv[0] <= 179, 'Hue value is not valid'
 	assert hsv[1] >= 0 and hsv[0] <= 255, 'Saturation value is not valid'
