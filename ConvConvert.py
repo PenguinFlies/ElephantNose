@@ -10,8 +10,9 @@ def conv_convert (hsv, precise = False, more_stage = False):
 
 	Returns
 	-------
-	integer, 1 to 5 for different strength IN NOT precise mode.
-	integer, 1 to 12(13 in more_stage mode) for different strength IN precise mode.
+	integer : 1 to 5 for different strength IN NOT precise mode.
+		  1 to 12(13 in more_stage mode) for different strength IN precise mode.
+		  -1 while cannot classify.
 	"""
 
 	assert hsv[0] >= 0 and hsv[0] <= 179, 'Hue value is not valid'
@@ -59,7 +60,7 @@ def conv_convert (hsv, precise = False, more_stage = False):
 			return 11
 		elif hsv[0] >= 145 and hsv[0] <= 155 and hsv[1] >= 200 and hsv[2] >= 200:
 			return 10
-		elif more_stage == True and  hsv[0] >= 125 and hsv[0] <= 135 and hsv[1] >= 29 and hsv[1] <= 38 and hsv[2] >= 200:
+		elif more_stage == True and hsv[0] >= 125 and hsv[0] <= 135 and hsv[1] >= 29 and hsv[1] <= 38 and hsv[2] >= 200:
 			return 13
 		else:
 			return -1
