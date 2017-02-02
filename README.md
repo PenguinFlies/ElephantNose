@@ -1,2 +1,7 @@
 # ElephantNose
-大象長長的鼻子正昂揚，全世界都舉起了希望
+## Prereq.
+1. OpenCV3
+2. Python3
+
+## 1. W_RDR_IMG_PROC.
+Changing ColorSpace (RGB2HSV) to Generate the Stg. of Conv.
