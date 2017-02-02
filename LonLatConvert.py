@@ -2,12 +2,13 @@ def lonlat_convert (x, y, option = 'r'):
 
 	""" Lon, Lat Converter
 	
-	parameters
+	Parameters
 	----------
 	x : integer, the image x-axis from left-bottom.
 	y : integer, the image y-axis from left-bottom.
 	option : string, optional (default = r), for which kind of image to convert.
-	returns
+
+	Returns
 	-------
 	[Lon, Lat] : list of Lon and Lat.
 	
@@ -30,3 +31,4 @@ def lonlat_convert (x, y, option = 'r'):
 		return [x * 0.075 + 117.975, y * 0.075 + 19.975]
 	else:
 		return [-1, -1]
+
