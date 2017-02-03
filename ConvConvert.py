@@ -38,7 +38,7 @@ def conv_convert (hsv, precise = False, more_stage = False):
 	elif precise == True:
 		if hsv[0] >= 50 and hsv[0] <= 70 and hsv[1] >= 200 and hsv[2] >= 140 and hsv[2] <= 170:
 			return 3
-		elif hsv[0] >= 50 and hsv[0] <= 70 and hsv[1] >= 200 and hsv[2] > 190 and hsv[2] <= 205:
+		elif hsv[0] >= 50 and hsv[0] <= 70 and hsv[1] >= 200 and hsv[2] > 190 and hsv[2] <= 225:
 			return 2
 		elif hsv[0] >= 50 and hsv[0] <= 70 and hsv[1] >= 200 and hsv[2] > 240 and hsv[2] <= 255:
 			return 1
