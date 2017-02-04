@@ -62,6 +62,3 @@ def rgb_convert (rgb, option = "HSV"):
 		return [hue, saturation, cmax]
 	else:
 		return [-1, -1, -1]    
-
-print(rgb_convert([255,255,0]))
-print(rgb_convert([255,255,0], "HSL"))

@@ -50,7 +50,7 @@ def conv_convert (hsv, precise = False, more_stage = False):
 			return 4
 		elif (hsv[0] >= 160 or hsv[0] <= 10) and hsv[1] >= 200 and hsv[2] >= 140 and hsv[2] <= 170:
 			return 9
-		elif (hsv[0] >= 160 or hsv[0] <= 10) and hsv[1] >= 200 and hsv[2] >= 180 and hsv[2] <= 205:
+		elif (hsv[0] >= 160 or hsv[0] <= 10) and hsv[1] >= 200 and hsv[2] >= 180 and hsv[2] <= 215:
 			return 8
 		elif (hsv[0] >= 160 or hsv[0] <= 10) and hsv[1] >= 200 and hsv[2] >= 230 and hsv[2] <= 255:
 			return 7
